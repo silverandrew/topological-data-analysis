@@ -31,8 +31,7 @@ void makeLandmark(std::vector<Pair> & landmarks, std::vector<Pair>&points){ //ma
   for(std::size_t i = 0; i != sections.size(); ++i){ //find the farthest point away for landmark
     for(int j = 0; j != sections[i].size(); ++j){
       if(distance(sections[i][j], landmarks[i]) > maxDist){
-        newLandmark.setX(sections[i][j].getX()); //update potential landmark's location in data
-        newLandmark.setY(sections[i][j].getY());
+        newLandmark = sections[i][j]; //updates potential lnadmarks x,y coordinates based on location in data
       }
     }
   }
