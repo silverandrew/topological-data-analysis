@@ -67,17 +67,13 @@ int main(){
   unsigned int npoints = 13;
   unsigned int nlandmarks = 5; //nlandmarks = totalnumberoflandmarks - 1 (-1 for the seed)
   for(std::size_t i = 1; i != npoints + 1; ++i){  //13 points total, not counting landmark
-  //  std::cout << "Enter point " << i << ".x" << std::endl;
     std::cin >> x;
-  //  std::cout << "Enter point " << i << ".y" << std::endl;
     std::cin >> y;
     Pair p(x,y); //construct point
     orig_points.push_back(p); //store the postd::size_t in the vector of points
   }
   std::cout << "Enter seed" << std::endl;
-//  std::cout << "Enter point.x" << std::endl;
   std::cin >> x;
- // std::cout << "Enter point.y" << std::endl;
   std::cin >> y;
   Pair p(x,y); //construct seed point
   landmarks.push_back(p); //store seed
