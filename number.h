@@ -16,5 +16,7 @@ class Pair{ //ordered pair (a,b)
   void setX(double xpos);
   void setY(double ypos);
   double getY() const;
+  bool operator==(const Pair& p) const;
+  Pair& operator=(const Pair& p);
 };
 #endif

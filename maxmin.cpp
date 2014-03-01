@@ -39,7 +39,7 @@ void makeLandmark(std::vector<Pair> & landmarks, std::vector<Pair>&points){ //ma
   landmarks.push_back(newLandmark); //add new landmark to landmark set
   int pointIdx;
   for(std::size_t i = 0; i != points.size(); ++i){ //find the index of the point that became a landmark
-    if(points[i].getX() == newLandmark.getX() && points[i].getY() == newLandmark.getY()){
+    if(points[i] == newLandmark){ //x and y coordinates the same
       pointIdx = i;
     }
   }
