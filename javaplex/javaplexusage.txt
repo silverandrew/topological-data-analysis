@@ -1,0 +1,7 @@
+Compile instructions: 
+
+java -classpath .:javaplex-4.1.0.jar WitnessComplexDemo
+
+Run instructions:
+
+java -classpath .:javaplex-4.1.0.jar WitnessComplexDemo
